@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary asset folder
+assets-temp
+
+# Python extraction scripts (used for content analysis)
+*.py
+*.json
+*.txt
+!package.json
+!tsconfig.json
+!tsconfig.node.json
+!eslint.config.js
+!tailwind.config.js
+!postcss.config.js
+
+# TypeScript build info
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
