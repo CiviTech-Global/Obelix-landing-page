@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ImageReveal } from '../components/ImageReveal'
 import { SectionReveal } from '../components/SectionReveal'
+import { assetUrl } from '../lib/utils'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,19 +12,19 @@ const highlights = [
     title: 'Raw Bar',
     description:
       'Oysters, caviar sandwich, and bluefin tuna crudo — the finest starting point.',
-    image: '/images/obelix-06.jpg',
+    image: assetUrl('/images/obelix-06.jpg'),
   },
   {
     title: 'Duck & Foie Gras',
     description:
       'From the iconic Obélix Dog to dry-aged duck breast and foie-co.',
-    image: '/images/obelix-07.jpg',
+    image: assetUrl('/images/obelix-07.jpg'),
   },
   {
     title: 'Pastry',
     description:
       'Courtney Kenyon\'s pastry program brings French precision and playful indulgence.',
-    image: '/images/obelix-03.jpg',
+    image: assetUrl('/images/obelix-03.jpg'),
   },
 ]
 

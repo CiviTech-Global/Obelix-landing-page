@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SectionReveal } from '../components/SectionReveal'
+import { assetUrl } from '../lib/utils'
 import { ImageReveal } from '../components/ImageReveal'
 import { SplitText } from '../components/SplitText'
 
@@ -96,13 +97,13 @@ export function Story() {
 
           <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
             <ImageReveal
-              src="/images/obelix-11.jpg"
+              src={assetUrl('/images/obelix-11.jpg')}
               alt="Obélix kitchen team at work"
               aspectRatio="aspect-[3/4]"
               className="mt-12"
             />
             <ImageReveal
-              src="/images/obelix-28.jpg"
+              src={assetUrl('/images/obelix-28.jpg')}
               alt="Obélix signature dish"
               aspectRatio="aspect-[3/4]"
             />

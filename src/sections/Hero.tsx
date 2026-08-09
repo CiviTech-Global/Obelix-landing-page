@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ChevronDown } from 'lucide-react'
 import { MagneticButton } from '../components/MagneticButton'
+import { assetUrl } from '../lib/utils'
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -12,9 +13,9 @@ export function Hero() {
   const [currentImage, setCurrentImage] = useState(0)
 
   const heroImages = [
-    '/images/obelix-14.jpg',
-    '/images/obelix-07.jpg',
-    '/images/obelix-03.jpg',
+    assetUrl('/images/obelix-14.jpg'),
+    assetUrl('/images/obelix-07.jpg'),
+    assetUrl('/images/obelix-03.jpg'),
   ]
 
   useEffect(() => {

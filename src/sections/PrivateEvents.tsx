@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SectionReveal } from '../components/SectionReveal'
 import { ImageReveal } from '../components/ImageReveal'
+import { assetUrl } from '../lib/utils'
 import { MagneticButton } from '../components/MagneticButton'
 import { Users, Calendar, Wine } from 'lucide-react'
 
@@ -65,7 +66,7 @@ export function PrivateEvents() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div ref={imageContainerRef} className="relative will-change-transform">
             <ImageReveal
-              src="/images/obelix-14.jpg"
+              src={assetUrl('/images/obelix-14.jpg')}
               alt="Obélix private dining room"
               aspectRatio="aspect-[4/5]"
               parallax={false}
